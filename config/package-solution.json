@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "solucao-spfx-client-side-solution",
+    "id": "77a158bc-68c3-4784-a0db-714b0ab06f9c",
+    "version": "1.0.0.1",
+    "includeClientSideAssets": true,
+    "isDomainIsolated": false
+  },
+  "paths": {
+    "zippedPackage": "solution/solucao-spfx.sppkg"
+  }
+}
