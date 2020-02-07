@@ -41,7 +41,9 @@ export default class CadastraFornecedorWebPart extends BaseClientSideWebPart <IC
     
       document
       .getElementById("btnSalvar")
-      .addEventListener("click", (e: Event) => this.adicionarFornecedor());        
+      .addEventListener("click", (e: Event) => this.adicionarFornecedor());  
+      
+      this.listarFornecedores();
     
   }
 
@@ -54,6 +56,7 @@ export default class CadastraFornecedorWebPart extends BaseClientSideWebPart <IC
         htmlTable += `<tr>
                       <td>${item.ID}</td>
                       <td>${item.Title}</td>
+                      <td>${item.Email}</td>
                       <td>${item.Ativo}</td>
                     </tr>`;
       });
@@ -66,7 +69,8 @@ export default class CadastraFornecedorWebPart extends BaseClientSideWebPart <IC
 
     sp.web.lists.getByTitle("Fornecedores").items.add({
       Title: $("#name").val(),
-      Ativo: false
+      Email: $("#email").val(),
+      Ativo: true
     }).then((iar: ItemAddResult) => {      
       console.log(iar);
       this.listarFornecedores();

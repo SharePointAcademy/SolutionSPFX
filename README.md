@@ -2,6 +2,14 @@
 
 This is where you include your WebPart documentation.
 
+### Lists
+
+Create a List - Fornecedores
+Fields          Type       
+Title           text
+Email           text
+Ativo           boolean
+
 ### Building the code
 
 ```bash
