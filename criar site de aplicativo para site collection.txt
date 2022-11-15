@@ -1,8 +1,9 @@
-referência oficial
+referÃªncia oficial
 https://docs.microsoft.com/pt-br/sharepoint/dev/general-development/site-collection-app-catalog
 
 # connect your tenant 
 Connect-SPOService
+url your tenant admin https://seusite-admin.sharepoint.com
 
 # execute the scripts bellow
 # get a reference to the site collection where the
